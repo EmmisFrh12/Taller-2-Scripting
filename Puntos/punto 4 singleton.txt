@@ -20,3 +20,11 @@ Acceso global: Al tener una única instancia accesible desde cualquier parte de 
 Evita la duplicación de recursos: Al limitar la creación de instancias a una sola vez, el Singleton ayuda a evitar el desperdicio de recursos y la duplicación de objetos que podrían causar problemas de rendimiento.
 
 Facilita el mantenimiento: Al centralizar la lógica y los datos en una sola instancia, el Singleton puede facilitar el mantenimiento y la refactorización del código, ya que solo necesitas hacer cambios en un lugar.
+
+Contras:
+
+Ocultamiento de dependencias: El uso del Singleton puede ocultar las dependencias reales de tu código, lo que dificulta la comprensión y la depuración. Esto puede llevar a un diseño menos transparente y más propenso a errores.
+
+Acoplamiento fuerte: El uso excesivo del Singleton puede resultar en un acoplamiento fuerte entre las diferentes partes de tu código. Esto puede hacer que tu código sea menos flexible y más difícil de mantener a medida que crece y evoluciona tu aplicación además de que dificulta la creación de “Moks” en tests unitarios.
+
+Dificultad para testear: Debido a que el Singleton crea una dependencia global en tu código, puede dificultar la escritura de pruebas unitarias independientes y aisladas. Las pruebas pueden depender de un estado específico de la instancia única, lo que puede hacer que las pruebas sean más complicadas.
