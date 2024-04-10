@@ -2,3 +2,29 @@
 
 Singleton es un patrón de diseño del tipo creacional cuyo propósito es garantizar la existencia de una sola instancia de una clase. Además el acceso a esa única instancia tiene que ser global, esto se logra creando el objeto deseado en una clase y recuperándolo como una instancia estática.
 
+¿como se implementa en c#?
+
+Para implementar singleton en c#:
+
+se utiliza un constructor privado para que no se puedan instancias desde fuera de la clase
+
+la clase debe contener un campo estático privado que solo pertenezca a la clase y tampoco pueda ser accedida desde fuera de esta
+
+y una estancia estatica publica que devuelve el campo instanciado, de este modo solo se ejecuta una vez la instrucción que crea la
+clase y la instancia queda creada para el resto de vida de la aplicación.
+
+pros:
+
+Acceso global: Al tener una única instancia accesible desde cualquier parte de tu código, el Singleton proporciona un punto de acceso global a esa instancia, lo que facilita su uso.
+
+Evita la duplicación de recursos: Al limitar la creación de instancias a una sola vez, el Singleton ayuda a evitar el desperdicio de recursos y la duplicación de objetos que podrían causar problemas de rendimiento.
+
+Facilita el mantenimiento: Al centralizar la lógica y los datos en una sola instancia, el Singleton puede facilitar el mantenimiento y la refactorización del código, ya que solo necesitas hacer cambios en un lugar.
+
+Contras:
+
+Ocultamiento de dependencias: El uso del Singleton puede ocultar las dependencias reales de tu código, lo que dificulta la comprensión y la depuración. Esto puede llevar a un diseño menos transparente y más propenso a errores.
+
+Acoplamiento fuerte: El uso excesivo del Singleton puede resultar en un acoplamiento fuerte entre las diferentes partes de tu código. Esto puede hacer que tu código sea menos flexible y más difícil de mantener a medida que crece y evoluciona tu aplicación además de que dificulta la creación de “Moks” en tests unitarios.
+
+Dificultad para testear: Debido a que el Singleton crea una dependencia global en tu código, puede dificultar la escritura de pruebas unitarias independientes y aisladas. Las pruebas pueden depender de un estado específico de la instancia única, lo que puede hacer que las pruebas sean más complicadas.
