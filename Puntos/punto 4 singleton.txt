@@ -2,3 +2,13 @@
 
 Singleton es un patrón de diseño del tipo creacional cuyo propósito es garantizar la existencia de una sola instancia de una clase. Además el acceso a esa única instancia tiene que ser global, esto se logra creando el objeto deseado en una clase y recuperándolo como una instancia estática.
 
+¿como se implementa en c#?
+
+Para implementar singleton en c#:
+
+se utiliza un constructor privado para que no se puedan instancias desde fuera de la clase
+
+la clase debe contener un campo estático privado que solo pertenezca a la clase y tampoco pueda ser accedida desde fuera de esta
+
+y una estancia estatica publica que devuelve el campo instanciado, de este modo solo se ejecuta una vez la instrucción que crea la
+clase y la instancia queda creada para el resto de vida de la aplicación.
