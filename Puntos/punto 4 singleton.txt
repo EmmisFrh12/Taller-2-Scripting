@@ -1,0 +1,4 @@
+¿que es un singleton? 
+
+Singleton es un patrón de diseño del tipo creacional cuyo propósito es garantizar la existencia de una sola instancia de una clase. Además el acceso a esa única instancia tiene que ser global, esto se logra creando el objeto deseado en una clase y recuperándolo como una instancia estática.
+
