@@ -12,3 +12,11 @@ la clase debe contener un campo estático privado que solo pertenezca a la clase
 
 y una estancia estatica publica que devuelve el campo instanciado, de este modo solo se ejecuta una vez la instrucción que crea la
 clase y la instancia queda creada para el resto de vida de la aplicación.
+
+pros:
+
+Acceso global: Al tener una única instancia accesible desde cualquier parte de tu código, el Singleton proporciona un punto de acceso global a esa instancia, lo que facilita su uso.
+
+Evita la duplicación de recursos: Al limitar la creación de instancias a una sola vez, el Singleton ayuda a evitar el desperdicio de recursos y la duplicación de objetos que podrían causar problemas de rendimiento.
+
+Facilita el mantenimiento: Al centralizar la lógica y los datos en una sola instancia, el Singleton puede facilitar el mantenimiento y la refactorización del código, ya que solo necesitas hacer cambios en un lugar.
