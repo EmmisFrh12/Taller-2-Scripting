@@ -11,13 +11,114 @@ public class PuntoTaller2Scripting
     // Declaración del delegado
     public delegate void Delegado();
 
+    public delegate void DelegadoRespuesta(string mensaje);
+
+    public delegate string DelegadoString(int nota);
+
+    public delegate bool DelegadoBool(int entero);
+
+    public delegate double DelegadoDouble(double numero1, double numero2);
+
+    public delegate string DelegadoStringInt(int numero);
+
+
+
     private static TaskState taskState = TaskState.INIT;
 
-    // Función que será asignada al delegado
     public static void Funcion1()
     {
-        Console.WriteLine("MyFunction was called!");
+        Console.WriteLine("Esta es la funcion1");
     }
+    public static double Suma(double numero1, double numero2)
+    {
+        return numero1 + numero2;
+    }
+    static double Resta(double numero1, double numero2)
+    {
+        return numero1 - numero2;
+    }
+    static double Producto(double numero1, double numero2)
+    {
+        return numero1 * numero2;
+    }
+    static double Cociente(double numero1, double numero2)
+    {
+        if (numero2 == 0)
+        {
+            return 0;
+        }
+        else
+        {
+            return numero1 / numero2;
+        }
+
+    }
+
+    static double Potencia(double numero1, double numero2)
+    {
+        return Math.Pow(numero1, numero2);
+    }
+
+    static void Respuesta(string mensaje)
+    {
+        Console.WriteLine("Su mensaje ha sido: " + mensaje + " ¿es correcto?");
+    }
+
+    static bool Comprobación(int opción)
+    {
+        if (opción > 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    static string Calificación(int nota)
+    {
+
+        if (nota == 100)
+        {
+            return "A";
+        }
+        if (nota >= 75 && nota < 100)
+        {
+            return "B";
+        }
+        if (nota >= 50 && nota < 75)
+        {
+            return "C";
+        }
+        if (nota >= 25 && nota < 50)
+        {
+            return "D";
+        }
+        if (nota >= 0 && nota < 25)
+        {
+            return "F";
+        }
+        else
+        {
+            return "nota inválida";
+        }
+
+    }
+
+    static void Saludo()
+    {
+        Console.WriteLine("Buenos días");
+    }
+    static void Despedida()
+    {
+        Console.WriteLine("Hasta Luego");
+    }
+
+    public static string Convertidor(int numero)
+    {
+        return "El número es: " + numero.ToString();
+    }
+
 
     public static void Main(string[] args)
     {
@@ -40,58 +141,58 @@ public class PuntoTaller2Scripting
                     }
                     if (buffer.Key == ConsoleKey.B)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion2;
-                        elQueTengoAquiColgado();
+                        DelegadoDouble elQueTengoAquiColgado = Suma;
+                        elQueTengoAquiColgado(1,2);
                     }
                     if (buffer.Key == ConsoleKey.C)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion3;
-                        elQueTengoAquiColgado();
+                        DelegadoDouble elQueTengoAquiColgado = Resta;
+                        elQueTengoAquiColgado(1,2);
                     }
                     if (buffer.Key == ConsoleKey.D)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion4;
-                        elQueTengoAquiColgado();
+                        DelegadoDouble elQueTengoAquiColgado = Producto;
+                        elQueTengoAquiColgado(1,2);
                     }
                     if (buffer.Key == ConsoleKey.E)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion5;
-                        elQueTengoAquiColgado();
+                        DelegadoDouble elQueTengoAquiColgado = Cociente;
+                        elQueTengoAquiColgado(1,2);
                     }
                     if (buffer.Key == ConsoleKey.F)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion6;
-                        elQueTengoAquiColgado();
+                        DelegadoDouble elQueTengoAquiColgado = Potencia;
+                        elQueTengoAquiColgado(1,2);
                     }
                     if (buffer.Key == ConsoleKey.G)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion7;
-                        elQueTengoAquiColgado();
+                        DelegadoRespuesta elQueTengoAquiColgado = Respuesta;
+                        elQueTengoAquiColgado("este es el mensaje");
                     }
                     if (buffer.Key == ConsoleKey.H)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion8;
-                        elQueTengoAquiColgado();
+                        DelegadoBool elQueTengoAquiColgado = Comprobación;
+                        elQueTengoAquiColgado(2);
                     }
                     if (buffer.Key == ConsoleKey.I)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion9;
-                        elQueTengoAquiColgado();
+                        DelegadoString elQueTengoAquiColgado = Calificación;
+                        elQueTengoAquiColgado(5);
                     }
                     if (buffer.Key == ConsoleKey.J)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion10;
+                        Delegado elQueTengoAquiColgado = Saludo;
                         elQueTengoAquiColgado();
                     }
                     if (buffer.Key == ConsoleKey.K)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion11;
+                        Delegado elQueTengoAquiColgado = Despedida;
                         elQueTengoAquiColgado();
                     }
                     if (buffer.Key == ConsoleKey.L)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion12;
-                        elQueTengoAquiColgado();
+                        DelegadoStringInt elQueTengoAquiColgado = Convertidor;
+                        elQueTengoAquiColgado(5);
                     }
                     if (buffer.Key == ConsoleKey.M)
                     {
