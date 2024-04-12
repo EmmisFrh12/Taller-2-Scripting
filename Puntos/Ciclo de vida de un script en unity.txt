@@ -1,0 +1,15 @@
+Ciclo de vida de un script en unity
+
+El ciclo de vida de un script en unity se refiere a el orden en el que se ejecutan las funciones del script.
+
+Orden:
+
+Reset: El reset es llamado para inicializar las propiedades de script cuando es por primera vez adjuntado al objeto y 
+también cuando el comando Reset es utilizado.
+
+Awake: Esta función siempre se llama antes de cualquier función Start y también justo después de que un prefab es instanciado.
+
+OnEnable: Esta función es llamada justo después de que el objeto es activado. Esto sucede cuando una instancia de MonoBehaviour es creada, tal como cuando un nivel es cargado o un GameObject con un componente script es instanciado.
+
+OnLevelWasLoaded: Esta función es ejecutada para informarle al juego que un nuevo nivel ha sido cargado.
+
