@@ -13,3 +13,12 @@ OnEnable: Esta función es llamada justo después de que el objeto es activado. 
 
 OnLevelWasLoaded: Esta función es ejecutada para informarle al juego que un nuevo nivel ha sido cargado.
 
+Start: Start es llamado antes de la primera actualización de frame solo si la instancia del script está activada.
+
+OnApplicationPause: Esto es llamado al final del frame dónde la pausa es detectada.
+
+FixedUpdate: Puede ser llamada varias veces por frame, si la velocidad de frame es baja y puede no ser llamada entre frames en absoluto si la velocidad de frame es alta. Todos los cálculos de física y actualizaciones ocurren inmediatamente después de FixedUpdate. Cuando aplique cálculos de movimiento dentro de FixedUpdate, usted no necesita multiplicar sus valores por Time.deltaTime. Esto se debe a que FixedUpdate en un temporizador fiable, independiente de la velocidad de frames.
+
+Update: Update se llama una vez por frame. Es la función principal para las actualizaciones de frames.
+
+LateUpdate: LateUpdate es llamada una vez por frame, después de que Update haya finalizado. Cualquier cálculo que sea realizado en Update será completado cuando LateUpdate comience. Un uso común para LateUpdate sería una cámara de tercera persona que sigue. Si usted hace que su personaje se mueva y gire, Update, usted puede realizar todos los cálculos de movimientos de cámara y rotación en LateUpdate. Esto asegurara que el personaje haya sido movido completamente antes de que la cámara haga un seguimiento a su posición.
