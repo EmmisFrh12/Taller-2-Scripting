@@ -118,10 +118,46 @@ void fecha()
 {
     DateTime currentTime = DateTime.Now;
 }
+bool Confirmar(string respuesta)
+{
+    if (respuesta == "Si"||respuesta == "SI")
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+double Promedio(double num1, double num2)
+{
+    return (num1 + num2) / 2;
+}
+
+double AreaRectangulo(double baserec, double alturarec)
+{
+    return baserec * alturarec;
+}
+double AreaTriangulo(double basetri, double alturatri)
+{
+    return (basetri * alturatri)/2;
+}
+double AreaCirculo(double radiocir)
+{
+    return radiocir*radiocir * Math.PI;
+}
+double VolumenCilindro(double radiocil, double alturacil)
+{
+    return radiocil * radiocil * alturacil* Math.PI;
+}
+double VolumenPrisma(double basepri, double alturapris, double anchopris)
+{
+    return basepri * alturapris * anchopris;
+}
 
 //Andres
 
- static string Convertidor(int numero)
+static string Convertidor(int numero)
 {
     return "El número es: " + numero.ToString();
 }
