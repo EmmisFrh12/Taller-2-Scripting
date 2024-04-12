@@ -114,6 +114,35 @@ public class PuntoTaller2Scripting
         Console.WriteLine("Hasta Luego");
     }
 
+    static void potencia()
+    {
+        int base1 = 0;
+        Random rnd = new Random();
+        int random = rnd.Next();
+
+        Console.WriteLine("¿mortal, cuanto dinero tienes si me lo dás te recompensaré?");
+        base1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("ahora que has confiado en mi haré que tu fortuna crezca");
+        Console.WriteLine(base1 * random);
+    }
+
+    static void Mayuscula()
+    {
+        Console.WriteLine("escribe una plabra y la escribiré en mayuscula");
+        string palabra = Console.ReadLine();
+        string mayuscula = palabra.ToUpper();
+    }
+    static void Miniscula()
+    {
+        Console.WriteLine("escribe una plabra en mayuscula y la escribiré en Minuscula");
+        string palabra2 = Console.ReadLine();
+        string Minuscula = palabra2.ToLower();
+    }
+    static void fecha()
+    {
+        DateTime currentTime = DateTime.Now;
+    }
+
     public static string Convertidor(int numero)
     {
         return "El número es: " + numero.ToString();
@@ -161,7 +190,7 @@ public class PuntoTaller2Scripting
                     }
                     if (buffer.Key == ConsoleKey.F)
                     {
-                        DelegadoDouble elQueTengoAquiColgado = Potencia;
+                        DelegadoDouble elQueTengoAquiColgado = potencia;
                         elQueTengoAquiColgado(1,2);
                     }
                     if (buffer.Key == ConsoleKey.G)
@@ -196,22 +225,22 @@ public class PuntoTaller2Scripting
                     }
                     if (buffer.Key == ConsoleKey.M)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion13;
+                        Delegado elQueTengoAquiColgado = potencia;
                         elQueTengoAquiColgado();
                     }
                     if (buffer.Key == ConsoleKey.N)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion14;
+                        Delegado elQueTengoAquiColgado = Mayuscula;
                         elQueTengoAquiColgado();
                     }
                     if (buffer.Key == ConsoleKey.O)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion15;
+                        Delegado elQueTengoAquiColgado = Miniscula;
                         elQueTengoAquiColgado();
                     }
                     if (buffer.Key == ConsoleKey.P)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion16;
+                        Delegado elQueTengoAquiColgado = fecha;
                         elQueTengoAquiColgado();
                     }
                     if (buffer.Key == ConsoleKey.Q)
