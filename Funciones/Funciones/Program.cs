@@ -114,3 +114,7 @@ void Miniscula()
     string palabra2 = Console.ReadLine();
     string Minuscula = palabra2.ToLower();
 }
+void fecha()
+{
+    DateTime currentTime = DateTime.Now;
+}
