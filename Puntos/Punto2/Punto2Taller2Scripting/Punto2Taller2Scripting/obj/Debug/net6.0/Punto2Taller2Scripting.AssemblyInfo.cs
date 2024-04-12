@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Punto2Taller2Scripting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc28a2c50fbba15d3f7c35cdd0f16be3549c8b61")]
 [assembly: System.Reflection.AssemblyProductAttribute("Punto2Taller2Scripting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Punto2Taller2Scripting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

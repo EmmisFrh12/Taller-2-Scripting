@@ -90,7 +90,7 @@ void Despedida()
 
 //Funciones de Emma
 
-void potencia()
+void Duplicador()
 {
     int base1 = 0;
     Random rnd = new Random();
