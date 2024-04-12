@@ -13,19 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
       "projectName": "Punto3",
       "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
-      "projectName": "Punto3",
-      "projectPath": "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
-      "packagesPath": "C:\\Users\\personal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\obj\\",
->>>>>>> 221055a6107e707da42630b997a47bfe59ef044e
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,5 +87,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

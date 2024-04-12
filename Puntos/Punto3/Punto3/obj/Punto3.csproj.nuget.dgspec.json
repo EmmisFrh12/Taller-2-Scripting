@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj": {}
   },
   "projects": {
@@ -13,19 +12,6 @@
         "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\obj\\",
-=======
-    "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
-        "projectName": "Punto3",
-        "projectPath": "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
-        "packagesPath": "C:\\Users\\personal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\obj\\",
->>>>>>> 221055a6107e707da42630b997a47bfe59ef044e
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

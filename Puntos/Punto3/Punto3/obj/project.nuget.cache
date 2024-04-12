@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "jINUQ5h3N4BE7i3S76cH62uOqQoLlcPrSrJQw6hNdtpVfkw9nAXOrYD8NQ9XS0OATOY/B0oOAbjfAc2LwMt+ow==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
@@ -10,11 +9,12 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "hjlybNpKoon/QcrYmgzdz06mUeoLhz1zMwrKLkMGI7U4lPo1MWGx4jyK/BOtq2FJGqz4Q2tbE4H5E72k9RPMLQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\Punto3.csproj",
-  "expectedPackageFiles": [],
->>>>>>> 221055a6107e707da42630b997a47bfe59ef044e
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto3\\Punto3\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
