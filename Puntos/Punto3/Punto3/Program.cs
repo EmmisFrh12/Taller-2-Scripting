@@ -1,68 +1,40 @@
-﻿using UnityEngine;
-using System.IO.Ports;
-using TMPro;
-using static System.Runtime.CompilerServices.RuntimeHelpers;
-using System.Diagnostics;
+﻿using System;
 
-enum TaskState
+public class EventoEjemplo
 {
-    INIT,
-    WAIT_COMMANDS
+    public delegate void EventHandler(object sender, EventArgs e);
+
+    public event EventHandler MiEvento;
+
+    public void DispararEvento()
+    {
+        Console.WriteLine("Disparando evento: ");
+
+        if (MiEvento != null)
+        {
+            // Crear argumentos para el evento (en este caso, no se necesitan argumentos)
+            EventArgs args = EventArgs.Empty;
+ 
+            MiEvento(this, args);
+        }
+    }
 }
 
-public class Codigo : MonoBehaviour
+public class Program
 {
-    private static TaskState taskState = TaskState.INIT;
-    private SerialPort _serialPort;
-    public TextMeshProUGUI myText;
-    private float lastSendTime = 0f;
-    private float intervalo = 3f;
-    void Start()
+    public static void Main(string[] args)
     {
-        _serialPort = new SerialPort();
-        _serialPort.PortName = "COM5";
-        _serialPort.BaudRate = 115200;
-        _serialPort.DtrEnable = true;
-        _serialPort.NewLine = "\n";
-        _serialPort.Open();
-        Debug.Log("Open Serial Port");
+        
+        EventoEjemplo eventoEjemplo = new EventoEjemplo();
+
+        // Suscribir un método al evento
+        eventoEjemplo.MiEvento += ManejadorEvento;
+
+        eventoEjemplo.DispararEvento();
     }
 
-    void Update()
+    public static void ManejadorEvento(object sender, EventArgs e)
     {
-        switch (taskState)
-        {
-            case TaskState.INIT:
-                taskState = TaskState.WAIT_COMMANDS;
-                Debug.Log("WAIT COMMANDS");
-                break;
-            case TaskState.WAIT_COMMANDS:
-
-
-
-                if (Input.GetKeyDown(KeyCode.A) && Time.time - lastSendTime >= intervalo)
-                {
-                    byte[] data = { 0x41 };
-                    _serialPort.Write(data, 0, 1);
-                    lastSendTime = Time.time;
-                    Debug.Log("Se presionó A");
-                }
-                if (Input.GetKeyDown(KeyCode.S) && Time.time - lastSendTime >= intervalo)
-                {
-                    byte[] data = { 0x53 };
-                    _serialPort.Write(data, 0, 1);
-                    lastSendTime = Time.time;
-                    Debug.Log("Se presionó S");
-                }
-                if (_serialPort.BytesToRead > 0)
-                {
-                    string response = _serialPort.ReadLine();
-                    myText.text = response;
-                }
-                break;
-            default:
-                Debug.Log("State Error");
-                break;
-        }
+        Console.WriteLine("Eventooooooooooooooooooooo");
     }
 }
