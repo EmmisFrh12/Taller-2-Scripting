@@ -28,3 +28,6 @@ Ocultamiento de dependencias: El uso del Singleton puede ocultar las dependencia
 Acoplamiento fuerte: El uso excesivo del Singleton puede resultar en un acoplamiento fuerte entre las diferentes partes de tu código. Esto puede hacer que tu código sea menos flexible y más difícil de mantener a medida que crece y evoluciona tu aplicación además de que dificulta la creación de “Moks” en tests unitarios.
 
 Dificultad para testear: Debido a que el Singleton crea una dependencia global en tu código, puede dificultar la escritura de pruebas unitarias independientes y aisladas. Las pruebas pueden depender de un estado específico de la instancia única, lo que puede hacer que las pruebas sean más complicadas.
+
+¿donde está implementado en corgi?
+
