@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
+
 Console.WriteLine("Hello, World!");
 //Cada uno va a hacer 10 funciones en este archivo para completar las treinta que hacen falta.
 static double Suma (double numero1, double numero2)
@@ -88,3 +90,27 @@ void Despedida()
 
 //Funciones de Emma
 
+void potencia()
+{
+    int base1 = 0;
+    Random rnd = new Random();
+    int random = rnd.Next();
+
+    Console.WriteLine("¿mortal, cuanto dinero tienes si me lo dás te recompensaré?");
+    base1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("ahora que has confiado en mi haré que tu fortuna crezca");
+    Console.WriteLine(base1*random);
+}
+
+void Mayuscula()
+{
+    Console.WriteLine("escribe una plabra y la escribiré en mayuscula");
+    string palabra = Console.ReadLine();
+    string mayuscula = palabra.ToUpper();
+}
+void Miniscula()
+{
+    Console.WriteLine("escribe una plabra en mayuscula y la escribiré en Minuscula");
+    string palabra2 = Console.ReadLine();
+    string Minuscula = palabra2.ToLower();
+}
