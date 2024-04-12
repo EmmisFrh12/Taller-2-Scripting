@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Punto3
-build_property.ProjectDir = C:\Users\personal\Documents\Taller2Scripting\Taller-2-Scripting\Punto3\Punto3\
+build_property.ProjectDir = C:\Users\user\Documents\GitHub\Taller-2-Scripting\Puntos\Punto3\Punto3\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
