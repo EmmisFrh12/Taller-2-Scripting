@@ -118,3 +118,64 @@ void fecha()
 {
     DateTime currentTime = DateTime.Now;
 }
+
+//Andres
+
+ static string Convertidor(int numero)
+{
+    return "El número es: " + numero.ToString();
+}
+
+ static void Funcion1()
+{
+    Console.WriteLine("Esta es la funcion1");
+}
+
+ static int Contador(int numero)
+{
+    numero++;
+    return numero;
+}
+
+ static void Arreglo(string[] arreglo)
+{
+    foreach (string elemento in arreglo)
+    {
+        Console.WriteLine(elemento);
+    }
+}
+
+ static void OrdenarLista<T>(List<T> lista, Comparison<T> comparador)
+{
+    lista.Sort(comparador);
+}
+static List<T> FiltrarLista<T>(List<T> lista, Predicate<T> predicado)
+{
+    return lista.FindAll(predicado);
+}
+ static void ProcesarLista<T>(List<T> lista, Action<T> accion)
+{
+    foreach (var elemento in lista)
+    {
+        accion(elemento);
+    }
+}
+static List<TResult> MapearLista<T, TResult>(List<T> lista, Func<T, TResult> transformador)
+{
+    List<TResult> resultado = new List<TResult>();
+    foreach (var elemento in lista)
+    {
+        resultado.Add(transformador(elemento));
+    }
+    return resultado;
+}
+static TResult AgregarLista<T, TResult>(List<T> lista, TResult valorInicial, Func<TResult, T, TResult> acumulador)
+{
+    TResult resultado = valorInicial;
+    foreach (var elemento in lista)
+    {
+        resultado = acumulador(resultado, elemento);
+    }
+    return resultado;
+}
+
