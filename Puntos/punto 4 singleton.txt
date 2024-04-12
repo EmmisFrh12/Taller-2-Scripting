@@ -37,5 +37,5 @@ Esta clase proporciona la funcionalidad básica para crear un Singleton persiste
 
 Todos los métodos y propiedades de instancia del GameManager se pueden llamar a través de GameManager.Instance. Esto proporciona un acceso unificado a la funcionalidad del GameManager desde cualquier parte del código.
 
-awsi que se usa el singleton para  garantizar que haya un gamemanager unico y no se puedan crear más 
+awsi que se usa el singleton para  garantizar que haya un gamemanager unico y no se puedan crear más, esto tambien aplica a los demás managers, tales como el sound manager y level manager.
 
