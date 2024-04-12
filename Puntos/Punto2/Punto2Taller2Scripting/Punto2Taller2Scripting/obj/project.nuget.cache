@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MDWMPNfLBUGuOwSBQXkfCqdCZUFLUaAxrsmOR88M8kkzxkEVFs1BreHnqV4qFSCux9xUi4Wp5S/h4kRHDjeRYQ==",
+  "dgSpecHash": "oTZ/TpGgJWDLyg4dN7w+a5GfqzUFL96HquEx90xJuX8NYlpupELOrJZpSSAUT9Pai/XDwnUUqtfiU25unGTV8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Taller-2-Scripting\\Puntos\\Punto2\\Punto2Taller2Scripting\\Punto2Taller2Scripting\\Punto2Taller2Scripting.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\personal\\Documents\\Taller2Scripting\\Taller-2-Scripting\\Puntos\\Punto2\\Punto2Taller2Scripting\\Punto2Taller2Scripting\\Punto2Taller2Scripting.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

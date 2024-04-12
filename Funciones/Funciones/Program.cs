@@ -178,4 +178,9 @@ static TResult AgregarLista<T, TResult>(List<T> lista, TResult valorInicial, Fun
     }
     return resultado;
 }
+static int RealizarOperacion(OperacionMatematica operacion, int numero1, int numero2)
+{
+    
+    return operacion(numero1, numero2);
+}
 
