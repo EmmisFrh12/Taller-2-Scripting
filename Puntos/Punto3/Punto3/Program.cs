@@ -4,18 +4,19 @@ public class EventoEjemplo
 {
     public delegate void EventHandler(object sender, EventArgs e);
 
-    public event EventHandler MiEvento;
+    public event EventHandler Evento;
 
     public void DispararEvento()
     {
         Console.WriteLine("Disparando evento: ");
 
-        if (MiEvento != null)
+        if (Evento != null)
         {
-            // Crear argumentos para el evento (en este caso, no se necesitan argumentos)
+            
             EventArgs args = EventArgs.Empty;
  
-            MiEvento(this, args);
+            Evento(this, args);
+            //No se necesitan argumentos en el ejemplo, pero sirven para dar informacion relevante sobre el evento
         }
     }
 }
@@ -28,13 +29,13 @@ public class Program
         EventoEjemplo eventoEjemplo = new EventoEjemplo();
 
         // Suscribir un método al evento
-        eventoEjemplo.MiEvento += ManejadorEvento;
+        eventoEjemplo.Evento += ManejadorEvento;
 
         eventoEjemplo.DispararEvento();
     }
 
     public static void ManejadorEvento(object sender, EventArgs e)
     {
-        Console.WriteLine("Eventooooooooooooooooooooo");
+        Console.WriteLine("Escuche el eventooooooooooooooooooooo");
     }
 }
