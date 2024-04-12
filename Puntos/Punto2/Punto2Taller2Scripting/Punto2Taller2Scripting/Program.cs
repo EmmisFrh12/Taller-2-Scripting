@@ -21,6 +21,10 @@ public class PuntoTaller2Scripting
 
     public delegate string DelegadoStringInt(int numero);
 
+    public delegate int DelegadoInt(int numero);
+
+    public delegate void DelegadoConArregloDeStrings(string[] arreglo);
+
 
 
     private static TaskState taskState = TaskState.INIT;
@@ -148,8 +152,20 @@ public class PuntoTaller2Scripting
         return "El número es: " + numero.ToString();
     }
 
+    public static int Contador(int numero)
+    {
+        numero++;
+        return numero;
+    }
 
-    public static void Main(string[] args)
+    public static void Arreglo (string[] arreglo)
+    {
+        foreach (string elemento in arreglo)
+        {
+            Console.WriteLine(elemento);
+        }
+    }
+public static void Main(string[] args)
     {
         ConsoleKeyInfo buffer = Console.ReadKey();
         
@@ -190,7 +206,7 @@ public class PuntoTaller2Scripting
                     }
                     if (buffer.Key == ConsoleKey.F)
                     {
-                        DelegadoDouble elQueTengoAquiColgado = potencia;
+                        DelegadoDouble elQueTengoAquiColgado = Potencia;
                         elQueTengoAquiColgado(1,2);
                     }
                     if (buffer.Key == ConsoleKey.G)
@@ -245,13 +261,14 @@ public class PuntoTaller2Scripting
                     }
                     if (buffer.Key == ConsoleKey.Q)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion17;
-                        elQueTengoAquiColgado();
+                        DelegadoInt elQueTengoAquiColgado = Contador;
+                        elQueTengoAquiColgado(5);
                     }
                     if (buffer.Key == ConsoleKey.R)
                     {
-                        Delegado elQueTengoAquiColgado = Funcion18;
-                        elQueTengoAquiColgado();
+                        DelegadoConArregloDeStrings elQueTengoAquiColgado = Arreglo;
+                        string[] arreglo = { "Hola", "Mundo", "!" };
+                        elQueTengoAquiColgado(arreglo);
                     }
                     if (buffer.Key == ConsoleKey.S)
                     {
